@@ -1,0 +1,27 @@
+import random
+
+def word_unscramble_game():
+words = ["python", "jumble", "easy", "difficult", "answer", "xylophone"]
+random.shuffle(words) # 
+score = 0
+
+print("Welcome to the Word Unscramble Game!")
+print("Unscramble the following words to score points:")
+
+for word in words:
+word_chars = list(word)
+random.shuffle(word_chars)
+scrambled_word = ''.join(word_chars)
+
+print("Unscramble this word:", scrambled_word)
+guess = input("Your guess: ").lower()
+
+if guess == word:
+print("Correct! You scored a point.")
+score += 1
+else:
+print("Incorrect. The correct answer is:", word)
+
+print("Game over! Your final score is:", score)
+
+word_unscramble_game()
