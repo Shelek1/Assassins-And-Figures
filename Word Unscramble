@@ -2,7 +2,7 @@ import random
 
 def word_unscramble_game():
 words = ["python", "jumble", "easy", "difficult", "answer", "xylophone"]
-random.shuffle(words) # 11133
+random.shuffle(words) # 111332
 score = 0
 
 print("Welcome to the Word Unscramble Game!")
